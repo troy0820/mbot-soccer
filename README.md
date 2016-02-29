@@ -14,9 +14,15 @@ Using the [mBot Bluetooth version](http://www.makeblock.cc/mbot/) and
   git clone https://github.com/EmergingTechnologyAdvisors/mbot-soccer
   cd mbot-soccer
   npm i
-```  
+``` 
 
 ### Install Firmware (USB)
+
+* In order to run the interchange locally, add `node_modules` to your `PATH`:
+
+```
+  export PATH=./node_modules/.bin:$PATH
+```
 
 * Connect the USB cable
 * Install the USB Firmata:
