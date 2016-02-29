@@ -26,6 +26,7 @@
   "dependencies": {
     "j5-songs": "0.0.9",
     "johnny-five": "^0.9.26",
+    "keypress": "^0.2.1",
     "node-pixel": "^0.6.0"
   },
   "devDependencies": {

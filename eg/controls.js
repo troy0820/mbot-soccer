@@ -9,7 +9,7 @@ const board = new five.Board({
 const MAX_SPEED = 200;
 const MAX_SPEED_TURNS = 85;
 
-board.on('ready', (err) => {
+board.on('ready', function (err) {
   if (err) {
     console.log('Oops, there was an error:', err);
     return;
@@ -19,12 +19,12 @@ board.on('ready', (err) => {
     left: new five.Motor([6, 7]),
     right: new five.Motor([5, 4])
   };
+
   const piezo = new five.Piezo(8);
 
   this.repl.inject({
     motors: motors,
-    piezo: piezo,
-    sonar: sonar
+    piezo: piezo
   });
 
   console.info('Board connected. Welcome to mBot Controls!');
