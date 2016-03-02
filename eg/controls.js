@@ -16,8 +16,8 @@ board.on('ready', function (err) {
   }
 
   const motors = {
-    left: new five.Motor([6, 7]),
-    right: new five.Motor([5, 4])
+    right: new five.Motor([6, 7]),
+    left: new five.Motor([5, 4])
   };
 
   const piezo = new five.Piezo(8);
