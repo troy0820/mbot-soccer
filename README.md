@@ -14,39 +14,41 @@ Using the [mBot Bluetooth version](http://www.makeblock.cc/mbot/) and
   git clone https://github.com/EmergingTechnologyAdvisors/mbot-soccer
   cd mbot-soccer
   npm i
-``` 
-
-### Install Firmware (USB)
-
-* In order to run the interchange locally, add `node_modules` to your `PATH`:
-
 ```
-  export PATH=./node_modules/.bin:$PATH
-```
+
+### Install Firmware
 
 * Connect the USB cable
+* Remove any attached wireless modules (such as Bluetooth)
+* Make sure the board switch is "on"
+
 * Install the USB Firmata:
 
 ```
-  interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata=bluetooth
+  npm run firmata-usb
 ```
 
-### Install Firmware (Bluetooth)
-
-* Remove the Bluetooth module from the mBot
-* Connect the USB cable
 * Install the Bluetooth Firmata:
 
 ```
-  interchange install git+https://github.com/Makeblock-official/mbot_nodebots -a uno --firmata=usb
+  npm run firmata-bluetooth
 ```
 
-* Restart the mBot with the Bluetooth module installed again
+* Restart the mBot with wireless (Bluetooth) modules installed
 * Pair the MakeBlock Bluetooth module (device Bluetooth settings)
 
 ## Running the Code
 
+* Run the bot with USB:
+
+```
+  node eg/controls.js
+```
+
+* Run the bot with Bluetooth:
+
 ```
   node eg/controls.js /dev/tty.Makeblock-ELETSPP
 ```
+
 * Control the mBot using the right keyboard keys and spacebar
