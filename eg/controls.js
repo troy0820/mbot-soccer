@@ -58,19 +58,19 @@ board.on('ready', function (err) {
       motors.right.rev(MAX_SPEED);
     }
 
-    if ( key.name === 'a' ) {
+    if ( key.name === 'f' ) {
       console.log('Going right');
       motors.left.rev(MAX_SPEED_TURNS);
       motors.right.rev(MAX_SPEED_TURNS);
     }
 
-    if ( key.name === 'f' ) {
+    if ( key.name === 'a' ) {
       console.log('Going left');
       motors.left.fwd(MAX_SPEED_TURNS);
       motors.right.fwd(MAX_SPEED_TURNS);
     }
 
-    if ( key.name === 'shift' ) {
+    if ( key.name === 't' ) {
       console.log('Turbo Boost!!');
       motors.left.rev(255);
       motors.right.fwd(255);
