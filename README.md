@@ -6,7 +6,7 @@ Using the [mBot Bluetooth version](http://www.makeblock.cc/mbot/) and
 ## Getting Started
 
 * Install Node 4
-* Install USB [driver](https://github.com/Makeblock-official/mbot_nodebots/tree/master/driver) for your platform
+* Install USB Serial [driver](https://github.com/Makeblock-official/mbot_nodebots/tree/master/drivers) for your platform
 
 ### Install Dependencies
 
