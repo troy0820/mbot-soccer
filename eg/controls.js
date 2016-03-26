@@ -34,50 +34,50 @@ board.on('ready', function (err) {
     if ( !key ) { return; }
 
     if ( key.name === 'q' ) {
-      console.log('uitting mBot Controls');
+      console.log('\nQuitting mBot Controls');
       motors.left.stop();
       motors.right.stop();
       process.exit();
     }
 
     if ( key.name === 'space' ) {
-      console.log('Stopping');
+      console.log('\nStopping');
       motors.left.stop();
       motors.right.stop();
     }
 
     if ( key.name === 'up' ) {
-      console.log('Going forward');
+      console.log('\nGoing forward');
       motors.left.rev(MAX_SPEED);
       motors.right.fwd(MAX_SPEED);
     }
 
     if ( key.name === 'down' ) {
-      console.log('Going backward');
+      console.log('\nGoing backward');
       motors.left.fwd(MAX_SPEED);
       motors.right.rev(MAX_SPEED);
     }
 
     if ( key.name === 'f' ) {
-      console.log('lank right');
+      console.log('\nGoing right');
       motors.left.rev(MAX_SPEED_TURNS);
       motors.right.rev(MAX_SPEED_TURNS);
     }
 
     if ( key.name === 'a' ) {
-      console.log('bout to be going  left');
+      console.log('\nGoing left');
       motors.left.fwd(MAX_SPEED_TURNS);
       motors.right.fwd(MAX_SPEED_TURNS);
     }
 
     if ( key.name === 't' ) {
-      console.log('urbo Boost!!');
+      console.log('\nTurbo Boost!!');
       motors.left.rev(255);
       motors.right.fwd(255);
     }
 
     if ( key.name === 'r' ) {
-      console.log('ick Rolled!!');
+      console.log('\nRick Rolled!!');
       piezo.play(songs.load('never-gonna-give-you-up'));
       motors.left.fwd(255);
       motors.right.fwd(255);
